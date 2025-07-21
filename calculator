@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="calc">
+        <h1>Functional Calculator</h1>
+        <div>
+            <input type="number" id="in1">
+            <input type="number" id="in2">
+        </div>
+        <div>
+        <button onclick="add()">ADD</button>
+        <button onclick="sub()">SUB</button>
+        <button onclick="mul()">MUL</button>
+        <button onclick="div()">DIV</button>
+        </div>
+        <div>
+            <h2 id="result"></h2>
+        </div>
+    </section>
+    
+<script src="script.js">
+
+</script>
+</body>
+
+</html>
+
+
+  function add() {
+    var num1 = parseInt(document.getElementById("in1").value)
+    var num2 = parseInt(document.getElementById("in2").value)
+    console.log(num1+num2)
+}
+function sub() {
+    var num1 = parseInt(document.getElementById("in1").value)
+    var num2 = parseInt(document.getElementById("in2").value)
+    document.getElementById("result").innerHTML=num1-num2
+}
+function mul() {
+    var num1 = parseInt(document.getElementById("in1").value)
+    var num2 = parseInt(document.getElementById("in2").value)
+    console.log(num1*num2)
+}
+function div() {
+    var num1 = parseInt(document.getElementById("in1").value)
+    var num2 = parseInt(document.getElementById("in2").value)
+    console.log(num1/num2)
+}
